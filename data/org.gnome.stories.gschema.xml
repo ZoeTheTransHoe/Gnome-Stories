@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="gnomestories">
+	<schema id="org.gnome.stories" path="/org/gnome/stories/">
+	</schema>
+</schemalist>

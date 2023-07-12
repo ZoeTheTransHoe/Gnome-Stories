@@ -1,0 +1,4 @@
+data/org.gnome.stories.desktop.in
+data/org.gnome.stories.appdata.xml.in
+data/org.gnome.stories.gschema.xml
+src/window.ui

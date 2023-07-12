@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=gnomestories
+Exec=gnomestories
+Icon=org.gnome.stories
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true
