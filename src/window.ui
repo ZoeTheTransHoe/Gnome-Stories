@@ -11,14 +11,12 @@
         <child>
           <object class="GtkHeaderBar" id="header_bar">
              <property name="show-title-buttons">True</property>
-
             <child type="end">
               <object class="GtkMenuButton">
                 <property name="icon-name">open-menu-symbolic</property>
                 <property name="menu-model">primary_menu</property>
               </object>
             </child>
-
             <child>
               <object class="GtkButton">
                 <property name="label">Open</property>
@@ -26,7 +24,6 @@
                 <property name="action-name">app.woah</property>
               </object>
             </child>
-
             <child>
               <object class="GtkButton" id="Undo Button">
                 <property name="label">Open</property>
@@ -34,7 +31,6 @@
                 <property name="action-name">app.woah</property>
               </object>
             </child>
-
             <child>
               <object class="GtkButton" id="Redo Button">
                 <property name="label">Open</property>
@@ -42,66 +38,63 @@
                 <property name="action-name">app.woah</property>
               </object>
             </child>
+          </object>
+        </child>
 
-          </object>
-        </child>
+        #Start Of Side Panel
         <child>
-          <object class="AdwTabBar" id="tab_bar">
-            <property name="autohide">false</property>
+          <object class="GtkGrid">
+            <property name="orientation">horizontal</property>
+            <child>
+              <object class="GtkBox" id="basic_video_editing_toolbox">
+                <property name="spacing">20</property>
+
+                <child>
+                  <object class="GtkButton" id="selection_tool">
+                    <property name="label">Selection</property>
+                    <property name="vexpand">false</property>
+                    <property name="halign">center</property>
+                    <property name="tooltip-text" translatable="yes">Selection</property>
+                    <property name="icon-name">edit-cut</property>
+                    <style>
+                      <class name="btn-1"/>
+                      <class name="circular"/>
+                    </style>
+                  </object>
+                </child>
+
+                <child>
+                  <object class="GtkButton" id="cut_tool">
+                    <property name="label">Cut</property>
+                    <property name="vexpand">false</property>
+                    <property name="hexpand">false</property>
+                    <property name="halign">center</property>
+
+                    <property name="tooltip-text" translatable="yes">Cut</property>
+                    <property name="icon-name">edit-select-all</property>
+                    <style>
+                      <class name="btn-1"/>
+                       <class name="circular"/>
+                    </style>
+                  </object>
+                </child>
+
+              </object>
+            </child>
           </object>
-          <object class="AdwTabView" id="tab_view"></object>
         </child>
-        <child>
-          <object class="GtkLabel" id="label">
-            <property name="label">Gnome Movie Maker</property>
-            <property name="vexpand">false</property>
-            <style>
-              <class name="title-1"/>
-            </style>
-          </object>
-        </child>
+        #End Of Side Panel
+
         <child>
           <object class="GtkVideo" id="video">
             <property name="autoplay">True</property>
             <property name="loop">False</property>
             <property name="vexpand">true</property>
-           </object>
-        </child>
-
-        <child>
-          <object class="GtkBox" id="basic_video_editing_toolbox">
-            <child>
-              <object class="GtkButton" id="selection_tool">
-                <property name="label">Selection</property>
-                <property name="vexpand">false</property>
-                <property name="halign">center</property>
-                <property name="tooltip-text" translatable="yes">Selection</property>
-                <property name="icon-name">edit-cut</property>
-                <style>
-                  <class name="btn-1"/>
-                  <class name="circular"/>
-                </style>
-              </object>
-            </child>
-
-            <child>
-              <object class="GtkButton" id="cut_tool">
-                <property name="label">Cut</property>
-                <property name="vexpand">false</property>
-                <property name="hexpand">false</property>
-                <property name="halign">center</property>
-
-                <property name="tooltip-text" translatable="yes">Cut</property>
-                <property name="icon-name">edit-select-all</property>
-                <style>
-                  <class name="btn-1"/>
-                   <class name="circular"/>
-                </style>
-              </object>
-            </child>
+            <property name="halign">center</property>
+            <property name="hexpand">true</property>
           </object>
         </child>
-       </object>
+      </object>
     </child>
   </template>
   <menu id="primary_menu">
@@ -136,4 +129,4 @@
       </item>
     </section>
   </menu>
-</interface>
+</interface>"
