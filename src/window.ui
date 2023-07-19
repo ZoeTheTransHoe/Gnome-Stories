@@ -69,7 +69,6 @@
                     <property name="vexpand">false</property>
                     <property name="hexpand">false</property>
                     <property name="halign">center</property>
-
                     <property name="tooltip-text" translatable="yes">Cut</property>
                     <property name="icon-name">edit-select-all</property>
                     <style>
@@ -79,6 +78,20 @@
                   </object>
                 </child>
 
+                <child>
+                  <object class="GtkButton" id="transition_tool">
+                    <property name="label">Transitions!! wooo spooky</property>
+                    <property name="vexpand">false</property>
+                    <property name="hexpand">false</property>
+                    <property name="halign">center</property>
+                    <property name="tooltip-text" translatable="yes">Transitions!! wooo spooky</property>
+                    <style>
+                      <class name="btn-1"/>
+                      <class name="oval"/>
+                    </style>
+                  </object>
+                </child>
+"
               </object>
             </child>
           </object>
