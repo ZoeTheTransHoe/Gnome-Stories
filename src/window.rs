@@ -31,8 +31,6 @@ mod imp {
         // Template widgets
         #[template_child]
         pub header_bar: TemplateChild<gtk::HeaderBar>,
-        #[template_child]
-        pub label: TemplateChild<gtk::Label>,
     }
 
     #[glib::object_subclass]
