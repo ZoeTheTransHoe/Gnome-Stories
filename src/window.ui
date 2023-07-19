@@ -91,7 +91,20 @@
                     </style>
                   </object>
                 </child>
-"
+
+                <child>
+                  <object class="GtkButton" id="transition_tool">
+                    <property name="label">Audio?</property>
+                    <property name="vexpand">false</property>
+                    <property name="hexpand">false</property>
+                    <property name="halign">center</property>
+                    <property name="tooltip-text" translatable="yes">Audio?? onlinux?? erm?????</property>
+                    <style>
+                      <class name="btn-1"/>
+                      <class name="oval"/>
+                    </style>
+                  </object>
+                </child>
               </object>
             </child>
           </object>
