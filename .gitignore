@@ -12,3 +12,15 @@ Cargo.lock
 
 # MSVC Windows builds of rustc generate these, which store debugging information
 *.pdb
+.flatpak-builder/cache/objects/54/2b14975bb28ba3a0b02b1145c19f9a4ee911e95e586e3b6897687530139e5f.file
+.flatpak-builder/cache/objects/6e/340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d.dirtree
+.flatpak-builder/cache/objects/a9/ff86f575d39a17a73d459274eef9351e9bf11cb5d6aa7df30060b5f6dc1d59.commit
+.flatpak-builder/cache/objects/c3/2417df986df5e78d95b1e6f4c3ceadad01bbdc413f47a81416048ffbc7e560.file
+.flatpak-builder/cache/objects/f2/616204246e2daf3ba1968c11ef6f10986534232887de0d47f2a4a023dcfc35.file
+.flatpak-builder/cache/objects/f8/fefdd5a350ebd4ce6a46b8525da2db04053e777a0cd112da4ee2de6468bd2d.dirtree
+.flatpak-builder/cache/refs/heads/x86_64-org.gnome.stories.json/init
+.flatpak-builder/ccache/bin/c++
+.flatpak-builder/ccache/bin/cc
+.flatpak-builder/ccache/bin/g++
+.flatpak-builder/ccache/bin/gcc
+.flatpak-builder/checksums/x86_64-org.gnome.stories.json
