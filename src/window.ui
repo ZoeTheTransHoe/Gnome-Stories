@@ -48,61 +48,113 @@
             <child>
               <object class="GtkBox" id="basic_video_editing_toolbox">
                 <property name="spacing">20</property>
+                <property name="orientation">vertical</property>
 
                 <child>
                   <object class="GtkButton" id="selection_tool">
-                    <property name="label">Selection</property>
-                    <property name="vexpand">false</property>
-                    <property name="halign">center</property>
-                    <property name="tooltip-text" translatable="yes">Selection</property>
-                    <property name="icon-name">edit-cut</property>
-                    <style>
-                      <class name="btn-1"/>
-                      <class name="circular"/>
-                    </style>
+                    <property name="child">
+                      <object class="GtkBox">
+                        <property name="vexpand">false</property>
+                        <property name="hexpand">false</property>
+                        <property name="halign">start</property>
+                        <property name="spacing">6</property>
+                        <child>
+                          <object class="GtkImage">
+                            <property name="icon-name">edit-cut</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="label">Selection</property>
+                          </object>
+                        </child>
+                        <style>
+                          <class name="btn-1"/>
+                          <class name="oval"/>
+                       </style>
+                      </object>
+                    </property>
                   </object>
                 </child>
 
-                <child>
-                  <object class="GtkButton" id="cut_tool">
-                    <property name="label">Cut</property>
-                    <property name="vexpand">false</property>
-                    <property name="hexpand">false</property>
-                    <property name="halign">center</property>
-                    <property name="tooltip-text" translatable="yes">Cut</property>
-                    <property name="icon-name">edit-select-all</property>
-                    <style>
-                      <class name="btn-1"/>
-                       <class name="circular"/>
-                    </style>
-                  </object>
-                </child>
+               <child>
+                <object class="GtkButton" id="cut_tool">
+                  <property name="child">
+                    <object class="GtkBox">
+                      <property name="vexpand">false</property>
+                      <property name="hexpand">false</property>
+                      <property name="halign">start</property>
+                      <property name="spacing">6</property>
+                      <child>
+                        <object class="GtkImage">
+                          <property name="icon-name">edit-select-all</property>
+                        </object>
+                      </child>
+                      <child>
+                        <object class="GtkLabel">
+                          <property name="label">Cut</property>
+                        </object>
+                      </child>
+                      <style>
+                        <class name="btn-1"/>
+                        <class name="oval"/>
+                     </style>
+                    </object>
+                  </property>
+                </object>
+              </child>
 
-                <child>
-                  <object class="GtkButton" id="transition_tool">
-                    <property name="label">Transitions!! wooo spooky</property>
-                    <property name="vexpand">false</property>
-                    <property name="hexpand">false</property>
-                    <property name="halign">center</property>
-                    <property name="tooltip-text" translatable="yes">Transitions!! wooo spooky</property>
-                    <style>
-                      <class name="btn-1"/>
-                      <class name="oval"/>
-                    </style>
-                  </object>
-                </child>
+              <child>
+                <object class="GtkButton" id="transition_tool">
+                  <property name="child">
+                    <object class="GtkBox">
+                      <property name="vexpand">false</property>
+                      <property name="hexpand">false</property>
+                      <property name="halign">start</property>
+                      <property name="spacing">6</property>
+                      <child>
+                        <object class="GtkImage">
+                          <property name="icon-name">edit-select-all</property>
+                        </object>
+                      </child>
+                      <child>
+                        <object class="GtkLabel">
+                          <property name="label">Transitions</property>
+                        </object>
+                      </child>
+                      <style>
+                        <class name="btn-1"/>
+                        <class name="oval"/>
+                     </style>
+                    </object>
+                  </property>
+                </object>
+              </child>
 
-                <child>
+              <child>
                   <object class="GtkButton" id="audio_tool">
-                    <property name="label">Audio?</property>
-                    <property name="vexpand">false</property>
-                    <property name="hexpand">false</property>
-                    <property name="halign">center</property>
-                    <property name="tooltip-text" translatable="yes">Audio?? onlinux?? erm?????</property>
-                    <style>
-                      <class name="btn-1"/>
-                      <class name="oval"/>
-                    </style>
+                    <property name="child">
+                      <object class="GtkBox">
+                        <property name="vexpand">false</property>
+                        <property name="hexpand">false</property>
+                        <property name="halign">start</property>
+                        <property name="spacing">6</property>
+                        <child>
+                          <object class="GtkImage">
+                            <property name="icon-name">audio-volume-medium</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="label">Audio</property>
+                          </object>
+                        </child>
+                        <style>
+                          <class name="btn-1"/>
+                          <class name="oval"/>
+                       </style>
+                      </object>
+                    </property>
                   </object>
                 </child>
               </object>
