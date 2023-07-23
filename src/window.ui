@@ -45,7 +45,7 @@
             <property name="orientation">horizontal</property>
             <child>
               <object class="GtkBox" id="sidebar">
-                <property name="spacing">8</property>
+                <property name="spacing">10</property>
                 <property name="orientation">vertical</property>
 
                 <child>
@@ -106,7 +106,7 @@
                 <object class="GtkButton" id="transition_tool">
                   <property name="child">
                     <object class="GtkBox">
-                     10<property name="vexpand">true</property>>
+                      <property name="vexpand">true</property>>
                       <property name="hexpand">false</property>
                       <property name="halign">start</property>
                       <property name="spacing">10</property>
@@ -133,7 +133,7 @@
                   <object class="GtkButton" id="audio_tool">
                     <property name="child">
                       <object class="GtkBox">
-                       10<property name="vexpand">true</property>>
+                        <property name="vexpand">true</property>>
                         <property name="hexpand">false</property>
                         <property name="halign">start</property>
                         <property name="spacing">10</property>
@@ -160,7 +160,7 @@
                   <object class="GtkButton" id="share_tool">
                     <property name="child">
                       <object class="GtkBox">
-                       10<property name="vexpand">true</property>>
+                        <property name="vexpand">true</property>>
                         <property name="hexpand">false</property>
                         <property name="halign">start</property>
                         <property name="spacing">10</property>
@@ -186,17 +186,72 @@
               </object>
             </child>
            <child>
-            <object class="GtkGrid">
+            <object class="GtkBox">
               <property name="orientation">vertical</property>
+              <property name="spacing">40</property>
               <child>
                 <object class="GtkGrid">
                   <property name="orientation">horizontal</property>
                   <child>
-                   <object class="GtkImage" id="source_dump">
+                    <object class="GtkGrid" id="source_preview">
                       <property name="vexpand">true</property>
                       <property name="hexpand">true</property>
-                    </object>>
+
+                      <child>
+                        <object class="GtkGrid">
+                          <child>
+                            <object class="GtkImage">
+                              <property name="vexpand">false</property>
+                              <property name="hexpand">false</property>
+                              <property name="icon-name">edit-cut</property>
+                              <property name="pixel-size">100</property>
+                               <layout>
+                                <property name="column">0</property>
+                                <property name="row">0</property>
+                              </layout>
+                            </object>
+                          </child>
+                          <child>
+                            <object class="GtkLabel">
+                              <property name="label">Clip One</property>
+                              <layout>
+                                <property name="column">0</property>
+                                <property name="row">1</property>
+                              </layout>
+                            </object>
+                          </child>
+                        </object>
+                      </child>
+
+                      <child>
+                        <object class="GtkGrid">
+                          <child>
+                            <object class="GtkImage">
+                              <property name="vexpand">false</property>
+                              <property name="hexpand">false</property>
+                              <property name="icon-name">edit-cut</property>
+                              <property name="pixel-size">100</property>
+                               <layout>
+                                <property name="column">0</property>
+                                <property name="row">0</property>
+                              </layout>
+                            </object>
+                          </child>
+                          <child>
+                            <object class="GtkLabel">
+                              <property name="label">Clip Two</property>
+                              <layout>
+                                <property name="column">0</property>
+                                <property name="row">1</property>
+                              </layout>
+                            </object>
+                          </child>
+                        </object>
+                      </child>
+
+                    </object>
                   </child>
+
                  <child>
                     <object class="GtkVideo" id="video_preview">
                       <property name="autoplay">True</property>
@@ -208,10 +263,27 @@
                 </object>
                </child>
                <child>
-                <object class="GtkListBoxRow" id="video_tracks">
-                  <property name="vexpand">true</property>
-                  <property name="hexpand">true</property>
-                </object>
+                 <object class="GtkGrid">
+                  <property name="orientation">vertical</property>
+                  <child>
+                    <object class="GtkButton" id="video_tracks">
+                      <property name="vexpand">true</property>
+                      <property name="hexpand">true</property>
+                    </object>
+                  </child>
+                  <child>
+                    <object class="GtkButton" id="video_tracks2">
+                      <property name="vexpand">true</property>
+                      <property name="hexpand">true</property>
+                    </object>
+                  </child>
+                  <child>
+                    <object class="GtkButton" id="video_tracks3">
+                      <property name="vexpand">true</property>
+                      <property name="hexpand">true</property>
+                    </object>
+                  </child>
+                 </object>
                </child>
               </object>
             </child>
