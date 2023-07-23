@@ -24,3 +24,8 @@ Cargo.lock
 .flatpak-builder/ccache/bin/g++
 .flatpak-builder/ccache/bin/gcc
 .flatpak-builder/checksums/x86_64-org.gnome.stories.json
+.flatpak-builder/cache/.lock
+.flatpak-builder/cache/config
+.flatpak-builder/cache/objects/24/acbb915c6ac43f3ece67dedf1ad4c4500de87a4533b0a2090cb1c535560586.dirtree
+.flatpak-builder/cache/objects/44/6a0ef11b7cc167f3b603e585c7eeeeb675faa412d5ec73f62988eb0b6c5488.dirmeta
+.flatpak-builder/cache/objects/f3/9dd9eaf762dd3be5839dffd12f6b784b01e5d7da550d6662487a14c70dc2cf.commit

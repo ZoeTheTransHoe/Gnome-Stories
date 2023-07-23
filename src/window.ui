@@ -93,7 +93,7 @@
                 </child>
 
                 <child>
-                  <object class="GtkButton" id="transition_tool">
+                  <object class="GtkButton" id="audio_tool">
                     <property name="label">Audio?</property>
                     <property name="vexpand">false</property>
                     <property name="hexpand">false</property>
