@@ -220,6 +220,15 @@
                               </layout>
                             </object>
                           </child>
+                          <child>
+                            <object class="GtkLabel">
+                              <property name="label">1920*1080-PNG Image</property>
+                              <layout>
+                                <property name="column">0</property>
+                                <property name="row">2</property>
+                              </layout>
+                            </object>
+                          </child>
                         </object>
                       </child>
 
@@ -243,6 +252,15 @@
                               <layout>
                                 <property name="column">0</property>
                                 <property name="row">1</property>
+                              </layout>
+                            </object>
+                          </child>
+                          <child>
+                            <object class="GtkLabel">
+                              <property name="label">69:20:10-MP4 Video</property>
+                              <layout>
+                                <property name="column">0</property>
+                                <property name="row">2</property>
                               </layout>
                             </object>
                           </child>
