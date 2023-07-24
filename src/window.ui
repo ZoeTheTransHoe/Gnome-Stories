@@ -182,9 +182,9 @@
                     </property>
                   </object>
                 </child>
-
               </object>
             </child>
+
            <child>
             <object class="GtkBox">
               <property name="orientation">vertical</property>
@@ -196,77 +196,82 @@
                     <object class="GtkGrid" id="source_preview">
                       <property name="vexpand">true</property>
                       <property name="hexpand">true</property>
-
                       <child>
-                        <object class="GtkGrid">
+                        <object class="GtkButton">
                           <child>
-                            <object class="GtkImage">
-                              <property name="vexpand">false</property>
-                              <property name="hexpand">false</property>
-                              <property name="icon-name">edit-cut</property>
-                              <property name="pixel-size">100</property>
-                               <layout>
-                                <property name="column">0</property>
-                                <property name="row">0</property>
-                              </layout>
-                            </object>
-                          </child>
-                          <child>
-                            <object class="GtkLabel">
-                              <property name="label">Clip One</property>
-                              <layout>
-                                <property name="column">0</property>
-                                <property name="row">1</property>
-                              </layout>
-                            </object>
-                          </child>
-                          <child>
-                            <object class="GtkLabel">
-                              <property name="label">1920*1080-PNG Image</property>
-                              <layout>
-                                <property name="column">0</property>
-                                <property name="row">2</property>
-                              </layout>
+                            <object class="GtkGrid">
+                              <child>
+                                <object class="GtkImage">
+                                  <property name="vexpand">false</property>
+                                  <property name="hexpand">false</property>
+                                  <property name="icon-name">edit-cut</property>
+                                  <property name="pixel-size">100</property>
+                                   <layout>
+                                    <property name="column">0</property>
+                                    <property name="row">0</property>
+                                  </layout>
+                                </object>
+                              </child>
+                              <child>
+                                <object class="GtkLabel">
+                                  <property name="label">Clip One</property>
+                                  <layout>
+                                    <property name="column">0</property>
+                                    <property name="row">1</property>
+                                  </layout>
+                                </object>
+                              </child>
+                              <child>
+                                <object class="GtkLabel">
+                                  <property name="label">1920*1080-PNG Image</property>
+                                  <layout>
+                                    <property name="column">0</property>
+                                    <property name="row">2</property>
+                                  </layout>
+                                </object>
+                              </child>
                             </object>
                           </child>
                         </object>
                       </child>
-
                       <child>
-                        <object class="GtkGrid">
+                        <object class="GtkButton">
                           <child>
-                            <object class="GtkImage">
-                              <property name="vexpand">false</property>
-                              <property name="hexpand">false</property>
-                              <property name="icon-name">edit-cut</property>
-                              <property name="pixel-size">100</property>
-                               <layout>
-                                <property name="column">0</property>
-                                <property name="row">0</property>
-                              </layout>
-                            </object>
-                          </child>
-                          <child>
-                            <object class="GtkLabel">
-                              <property name="label">Clip Two</property>
-                              <layout>
-                                <property name="column">0</property>
-                                <property name="row">1</property>
-                              </layout>
-                            </object>
-                          </child>
-                          <child>
-                            <object class="GtkLabel">
-                              <property name="label">69:20:10-MP4 Video</property>
-                              <layout>
-                                <property name="column">0</property>
-                                <property name="row">2</property>
-                              </layout>
+                            <object class="GtkGrid">
+                              <child>
+                                <object class="GtkImage">
+                                  <property name="vexpand">false</property>
+                                  <property name="hexpand">false</property>
+                                  <property name="icon-name">edit-cut</property>
+                                  <property name="pixel-size">100</property>
+                                   <layout>
+                                    <property name="column">0</property>
+                                    <property name="row">0</property>
+                                  </layout>
+                                </object>
+                              </child>
+                              <child>
+                                <object class="GtkLabel">
+                                  <property name="label">Clip Two</property>
+                                  <layout>
+                                    <property name="column">0</property>
+                                    <property name="row">1</property>
+                                  </layout>
+                                </object>
+                              </child>
+                              <child>
+                                <object class="GtkLabel">
+                                  <property name="label">69:20:10-MP4 Video</property>
+                                  <layout>
+                                    <property name="column">0</property>
+                                    <property name="row">2</property>
+                                  </layout>
+                                </object>
+                              </child>
                             </object>
                           </child>
                         </object>
                       </child>
-
                     </object>
                   </child>
 
@@ -280,6 +285,7 @@
                   </child>
                 </object>
                </child>
+
                <child>
                  <object class="GtkGrid">
                   <property name="orientation">vertical</property>
