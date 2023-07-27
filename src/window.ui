@@ -93,7 +93,7 @@
                         </child>
                         <child>
                           <object class="GtkLabel">
-                            <property name="label">Cut</property>
+                            <property name="label">Visual Effects</property>
                           </object>
                         </child>
                         <style>
