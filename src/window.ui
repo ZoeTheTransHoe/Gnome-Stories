@@ -42,17 +42,45 @@
         </child>
 
         <child>
-          <object class="GtkGrid">
+          <object class="GtkBox">
             <property name="orientation">horizontal</property>
             <child>
               <object class="GtkGrid">
-                <child>
-              <object class="GtkBox" id="sidebar">
-                <property name="spacing">10</property>
-                <property name="orientation">horizontal</property>
-                <property name="vexpand">false</property>
-                <child>
-                  <object class="GtkButton" id="selection_tool">
+              <property name="orientation">vertical</property>
+              <child>
+                <object class="GtkBox" id="sidebar">
+                  <property name="spacing">10</property>
+                  <property name="orientation">horizontal</property>
+                  <property name="vexpand">false</property>
+
+                  <child>
+                    <object class="GtkButton" id="selection_tool">
+                      <property name="child">
+                        <object class="GtkBox">
+                          <property name="hexpand">false</property>
+                          <property name="halign">start</property>
+                          <property name="spacing">10</property>
+                          <child>
+                            <object class="GtkImage">
+                              <property name="icon-name">edit-cut</property>
+                            </object>
+                          </child>
+                          <child>
+                            <object class="GtkLabel">
+                              <property name="label">Selection</property>
+                            </object>
+                          </child>
+                          <style>
+                            <class name="btn-1"/>
+                            <class name="oval"/>
+                         </style>
+                        </object>
+                      </property>
+                    </object>
+                  </child>
+
+                 <child>
+                  <object class="GtkButton" id="cut_tool">
                     <property name="child">
                       <object class="GtkBox">
                         <property name="hexpand">false</property>
@@ -65,7 +93,7 @@
                         </child>
                         <child>
                           <object class="GtkLabel">
-                            <property name="label">Selection</property>
+                            <property name="label">Cut</property>
                           </object>
                         </child>
                         <style>
@@ -77,174 +105,98 @@
                   </object>
                 </child>
 
-               <child>
-                <object class="GtkButton" id="cut_tool">
-                  <property name="child">
-                    <object class="GtkBox">
-                      <property name="hexpand">false</property>
-                      <property name="halign">start</property>
-                      <property name="spacing">10</property>
-                      <child>
-                        <object class="GtkImage">
-                          <property name="icon-name">edit-cut</property>
+                <child>
+                  <object class="GtkButton" id="transition_tool">
+                    <property name="child">
+                      <object class="GtkBox">
+                        <property name="hexpand">false</property>
+                        <property name="halign">start</property>
+                        <property name="spacing">10</property>
+                        <child>
+                          <object class="GtkImage">
+                            <property name="icon-name">edit-select-all</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="label">Transitions</property>
+                          </object>
+                        </child>
+                        <style>
+                          <class name="btn-1"/>
+                          <class name="oval"/>
+                       </style>
+                      </object>
+                    </property>
+                  </object>
+                </child>
+
+                <child>
+                    <object class="GtkButton" id="audio_tool">
+                      <property name="child">
+                        <object class="GtkBox">
+                          <property name="hexpand">false</property>
+                          <property name="halign">start</property>
+                          <property name="spacing">10</property>
+                          <child>
+                            <object class="GtkImage">
+                              <property name="icon-name">audio-volume-medium</property>
+                            </object>
+                          </child>
+                          <child>
+                            <object class="GtkLabel">
+                              <property name="label">Audio</property>
+                            </object>
+                          </child>
+                          <style>
+                            <class name="btn-1"/>
+                            <class name="oval"/>
+                         </style>
                         </object>
-                      </child>
-                      <child>
-                        <object class="GtkLabel">
-                          <property name="label">Cut</property>
-                        </object>
-                      </child>
-                      <style>
-                        <class name="btn-1"/>
-                        <class name="oval"/>
-                     </style>
+                      </property>
                     </object>
-                  </property>
+                  </child>
+
+                  <child>
+                    <object class="GtkButton" id="share_tool">
+                      <property name="child">
+                        <object class="GtkBox">
+                          <property name="hexpand">false</property>
+                          <property name="halign">start</property>
+                          <property name="spacing">10</property>
+                          <child>
+                            <object class="GtkImage">
+                              <property name="icon-name">emblem-shared</property>
+                            </object>
+                          </child>
+                          <child>
+                            <object class="GtkLabel">
+                              <property name="label">Share</property>
+                            </object>
+                          </child>
+                          <style>
+                            <class name="btn-1"/>
+                            <class name="oval"/>
+                         </style>
+                        </object>
+                      </property>
+                    </object>
+                  </child>
                 </object>
               </child>
 
               <child>
-                <object class="GtkButton" id="transition_tool">
-                  <property name="child">
-                    <object class="GtkBox">
-                      <property name="hexpand">false</property>
-                      <property name="halign">start</property>
-                      <property name="spacing">10</property>
-                      <child>
-                        <object class="GtkImage">
-                          <property name="icon-name">edit-select-all</property>
-                        </object>
-                      </child>
-                      <child>
-                        <object class="GtkLabel">
-                          <property name="label">Transitions</property>
-                        </object>
-                      </child>
-                      <style>
-                        <class name="btn-1"/>
-                        <class name="oval"/>
-                     </style>
-                    </object>
-                  </property>
+                <object class="GtkBox" id="subSideBar">
+                  <property name="orientation">horizontal</property>
                 </object>
               </child>
-
-              <child>
-                  <object class="GtkButton" id="audio_tool">
-                    <property name="child">
-                      <object class="GtkBox">
-                        <property name="hexpand">false</property>
-                        <property name="halign">start</property>
-                        <property name="spacing">10</property>
-                        <child>
-                          <object class="GtkImage">
-                            <property name="icon-name">audio-volume-medium</property>
-                          </object>
-                        </child>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="label">Audio</property>
-                          </object>
-                        </child>
-                        <style>
-                          <class name="btn-1"/>
-                          <class name="oval"/>
-                       </style>
-                      </object>
-                    </property>
-                  </object>
-                </child>
-
-                <child>
-                  <object class="GtkButton" id="share_tool">
-                    <property name="child">
-                      <object class="GtkBox">
-                        <property name="hexpand">false</property>
-                        <property name="halign">start</property>
-                        <property name="spacing">10</property>
-                        <child>
-                          <object class="GtkImage">
-                            <property name="icon-name">emblem-shared</property>
-                          </object>
-                        </child>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="label">Share</property>
-                          </object>
-                        </child>
-                        <style>
-                          <class name="btn-1"/>
-                          <class name="oval"/>
-                       </style>
-                      </object>
-                    </property>
-                  </object>
-                </child>
-              </object>
-            </child>
-
-            <child>
-              <object class="GtkBox" id="subSideBar">
-                <property name="orientation">vertical</property>
-                <child>
-                  <object class="GtkButton" id="audio_tool2">
-                    <property name="child">
-                      <object class="GtkBox">
-                        <property name="hexpand">false</property>
-                        <property name="halign">start</property>
-                        <property name="spacing">10</property>
-                        <child>
-                          <object class="GtkImage">
-                            <property name="icon-name">audio-volume-medium</property>
-                          </object>
-                        </child>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="label">Audio</property>
-                          </object>
-                        </child>
-                        <style>
-                          <class name="btn-1"/>
-                          <class name="oval"/>
-                       </style>
-                      </object>
-                    </property>
-                  </object>
-                </child>
-                <child>
-                  <object class="GtkButton" id="audio_tool3">
-                    <property name="child">
-                      <object class="GtkBox">
-                        <property name="hexpand">false</property>
-                        <property name="halign">start</property>
-                        <property name="spacing">10</property>
-                        <child>
-                          <object class="GtkImage">
-                            <property name="icon-name">audio-volume-medium</property>
-                          </object>
-                        </child>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="label">Audio</property>
-                          </object>
-                        </child>
-                        <style>
-                          <class name="btn-1"/>
-                          <class name="oval"/>
-                       </style>
-                      </object>
-                    </property>
-                  </object>
-                </child>
-              </object>
-            </child>
-          </object>
-        </child>
+            </object>
+          </child>
 
            <child>
             <object class="GtkBox">
               <property name="orientation">vertical</property>
-              <property name="spacing">40</property>
+              <property name="spacing">400</property>
               <child>
                 <object class="GtkGrid">
                   <property name="orientation">horizontal</property>
@@ -353,12 +305,6 @@
                   </child>
                   <child>
                     <object class="GtkButton" id="video_tracks2">
-                      <property name="vexpand">true</property>
-                      <property name="hexpand">true</property>
-                    </object>
-                  </child>
-                  <child>
-                    <object class="GtkButton" id="video_tracks3">
                       <property name="vexpand">true</property>
                       <property name="hexpand">true</property>
                     </object>
