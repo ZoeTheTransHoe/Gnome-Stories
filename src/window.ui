@@ -21,38 +21,38 @@
               <object class="GtkButton">
                 <property name="label">Open</property>
                 <property name="icon-name">document-open</property>
-                <property name="action-name">app.woah</property>
+                <property name="action-name">app.video</property>
               </object>
             </child>
             <child>
               <object class="GtkButton" id="Undo Button">
                 <property name="label">Open</property>
                 <property name="icon-name">edit-undo</property>
-                <property name="action-name">app.woah</property>
+                <!-- <property name="action-name">app.undo</property> -->
               </object>
             </child>
             <child>
               <object class="GtkButton" id="Redo Button">
                 <property name="label">Open</property>
                 <property name="icon-name">edit-redo</property>
-                <property name="action-name">app.woah</property>
+                <!-- <property name="action-name">app.redo</property> -->
               </object>
             </child>
           </object>
         </child>
+
         <child>
           <object class="GtkGrid">
             <property name="orientation">horizontal</property>
             <child>
               <object class="GtkBox" id="sidebar">
                 <property name="spacing">10</property>
-                <property name="orientation">vertical</property>
-
+                <property name="orientation">horizontal</property>
+                <property name="vexpand">false</property>
                 <child>
                   <object class="GtkButton" id="selection_tool">
                     <property name="child">
                       <object class="GtkBox">
-                        <property name="vexpand">true</property>
                         <property name="hexpand">false</property>
                         <property name="halign">start</property>
                         <property name="spacing">10</property>
@@ -79,7 +79,6 @@
                 <object class="GtkButton" id="cut_tool">
                   <property name="child">
                     <object class="GtkBox">
-                     10<property name="vexpand">true</property>>
                       <property name="hexpand">false</property>
                       <property name="halign">start</property>
                       <property name="spacing">10</property>
@@ -106,7 +105,6 @@
                 <object class="GtkButton" id="transition_tool">
                   <property name="child">
                     <object class="GtkBox">
-                      <property name="vexpand">true</property>>
                       <property name="hexpand">false</property>
                       <property name="halign">start</property>
                       <property name="spacing">10</property>
@@ -133,7 +131,6 @@
                   <object class="GtkButton" id="audio_tool">
                     <property name="child">
                       <object class="GtkBox">
-                        <property name="vexpand">true</property>>
                         <property name="hexpand">false</property>
                         <property name="halign">start</property>
                         <property name="spacing">10</property>
@@ -160,7 +157,6 @@
                   <object class="GtkButton" id="share_tool">
                     <property name="child">
                       <object class="GtkBox">
-                        <property name="vexpand">true</property>>
                         <property name="hexpand">false</property>
                         <property name="halign">start</property>
                         <property name="spacing">10</property>

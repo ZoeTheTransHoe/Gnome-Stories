@@ -17,10 +17,9 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-
 use gtk::prelude::*;
 use adw::subclass::prelude::*;
-use gtk::{gio, glib};
+use gtk::{gio, glib,CompositeTemplate};
 
 use crate::config::VERSION;
 use crate::GnomestoriesWindow;
@@ -28,8 +27,12 @@ use crate::GnomestoriesWindow;
 mod imp {
     use super::*;
 
-    #[derive(Debug, Default)]
-    pub struct GnomestoriesApplication {}
+    #[derive(Debug, Default, CompositeTemplate)]
+    #[template(file = "window.ui")]
+    pub struct GnomestoriesApplication {
+        #[template_child(id = "video")]
+        pub video: TemplateChild<gtk::Video>,
+    }
 
     #[glib::object_subclass]
     impl ObjectSubclass for GnomestoriesApplication {
@@ -69,6 +72,8 @@ mod imp {
 
     impl GtkApplicationImpl for GnomestoriesApplication {}
     impl AdwApplicationImpl for GnomestoriesApplication {}
+    impl WindowImpl for GnomestoriesApplication {}
+    impl WidgetImpl for GnomestoriesApplication {}
 }
 
 glib::wrapper! {
@@ -92,10 +97,10 @@ impl GnomestoriesApplication {
         let about_action = gio::ActionEntry::builder("about")
             .activate(move |app: &Self, _, _| app.show_about())
             .build();
-        let woah_action = gio::ActionEntry::builder("woah")
-            .activate(move |app: &Self, _, _| app.show_woah())
+        let video_action = gio::ActionEntry::builder("video")
+            .activate(move |app: &Self, _, _| app.pick_video())
             .build();
-        self.add_action_entries([quit_action, about_action, woah_action]);
+        self.add_action_entries([quit_action, about_action, video_action]);
     }
 
     fn show_about(&self) {
@@ -113,28 +118,13 @@ impl GnomestoriesApplication {
         about.present();
     }
 
-    fn show_woah(&self) {
-        let window = self.active_window().unwrap();
-        let woah = adw::AboutWindow::builder()
-            .transient_for(&window)
-            .application_name("gnomemovieeditor")
-            .application_icon("org.gnome.MovieEditor")
-            .developer_name("Zoey")
-            .version(VERSION)
-            .developers(vec!["Zoey"])
-            .copyright("© 2023 Zoey")
-            .build();
-
-        let video = "5";
-        let number2 = "10";
-        let woah2 = gtk::Window::builder()
-            .title("Video Project Info")
+    fn pick_video(&self) {
+        let file_picker = gtk::FileChooserDialog::builder()
+            .title("Choose New Clip")
             .default_width(600)
             .default_height(300)
+            .modal(true)
             .build();
-
-        woah.present();
-        woah2.present();
+        file_picker.present();
     }
 }
-
