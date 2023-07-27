@@ -45,6 +45,8 @@
           <object class="GtkGrid">
             <property name="orientation">horizontal</property>
             <child>
+              <object class="GtkGrid">
+                <child>
               <object class="GtkBox" id="sidebar">
                 <property name="spacing">10</property>
                 <property name="orientation">horizontal</property>
@@ -180,6 +182,64 @@
                 </child>
               </object>
             </child>
+
+            <child>
+              <object class="GtkBox" id="subSideBar">
+                <property name="orientation">vertical</property>
+                <child>
+                  <object class="GtkButton" id="audio_tool2">
+                    <property name="child">
+                      <object class="GtkBox">
+                        <property name="hexpand">false</property>
+                        <property name="halign">start</property>
+                        <property name="spacing">10</property>
+                        <child>
+                          <object class="GtkImage">
+                            <property name="icon-name">audio-volume-medium</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="label">Audio</property>
+                          </object>
+                        </child>
+                        <style>
+                          <class name="btn-1"/>
+                          <class name="oval"/>
+                       </style>
+                      </object>
+                    </property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkButton" id="audio_tool3">
+                    <property name="child">
+                      <object class="GtkBox">
+                        <property name="hexpand">false</property>
+                        <property name="halign">start</property>
+                        <property name="spacing">10</property>
+                        <child>
+                          <object class="GtkImage">
+                            <property name="icon-name">audio-volume-medium</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="label">Audio</property>
+                          </object>
+                        </child>
+                        <style>
+                          <class name="btn-1"/>
+                          <class name="oval"/>
+                       </style>
+                      </object>
+                    </property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
 
            <child>
             <object class="GtkBox">
