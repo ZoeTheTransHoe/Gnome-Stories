@@ -187,13 +187,13 @@
 
               <child>
                 <object class="GtkBox" id="subSideBar">
-                  <property name="orientation">horizontal</property>
+
                 </object>
               </child>
             </object>
           </child>
 
-           <child>
+          <child>
             <object class="GtkBox">
               <property name="orientation">vertical</property>
               <property name="spacing">400</property>
